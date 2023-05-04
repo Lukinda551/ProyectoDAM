@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/js/all.min.js"></script>
+    <link rel="stylesheet" href="assets/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css">
+    <script src="assets/script/script.js"></script>
+    <link rel="stylesheet" href="assets/estilos/estilo.css">
+    <link rel="stylesheet" href="assets/estilos/modal.css">
+    <link rel="stylesheet" href="assets/estilos/botonera.css">
+
+    <title>DAM</title>
+</head>
+
+<body onload="fInicio()">
+
+    <div class="fondo" style="background-image: url('assets/imagenes/descarga.jpg');">
+
+    </div>
+    <header>
+        <div class="logo">
+            <img src="/assets/imagenes/unnamed.png" alt="">
+            <span>SYMPHONY</span>
+        </div>
+        <div class="menu_content" id="menu_content">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="barra">
+                <i class="fa-solid fa-bars" style="color: #fafafa;"></i>
+            </label>
+            <div class="menu1" id="menu1">
+                <ul class="menu">
+                    <hr>
+                    <li class="menu_item">INICIO</li>
+                    <hr>
+                    <li class="menu_item" id="menu_item" onclick="menu1()">
+                        <label for="subcategorias-toggle" class="subcategorias-label">CATEGORIAS</label>
+                        <input type="checkbox" id="subcategorias-toggle" class="subcategorias-toggle">
+                        <ul class="subcategorias">
+
+                            <li>CONCIERTOS</li>
+
+                            <li>ORQUESTA</li>
+
+                            <li>SOLISTAS</li>
+                          
+
+                        </ul>
+                    </li>
+                    <hr>
+                    <li class="menu_item" onclick="flog()">INICIAR SESION</li>
+                    <hr>
+                    <li class="menu_item" onclick="fsign()">REGISTRARSE</li>
+                    <hr>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section>
+
+        <div id="div_modal">
+
+            <h1>SYMPHONY</h1>
+            <form>
+                <input type="hidden" id="accion">
+                <!-- IMPORTANTE QUITAR HIDDEN PARA COMPROBAR -->
+                <!-- <label for="id">id</label> -->
+                <input type="hidden" id="id">
+                <!-- IMPORTANTE QUITAR HIDDEN PARA COMPROBAR -->
+
+                <label for="usuario">USUARIO</label>
+                <input type="text" id="usuario">
+
+                <label for="CrearC">CONTRASEÑA</label>
+                <input type="password" id="CrearC">
+                <div class="nuevoregistro">
+                    <label for="ConfC">CONFIRMAR CONTRASEÑA</label>
+                    <input type="password" id="ConfC">
+                </div>
+                <div class="politicas">
+                    <input type="checkbox" id="terminos">
+                    <label for="terminos">He leído y acepto las políticas de privacidad , así como los términos de la
+                        web</label>
+
+                </div>
+
+                <!-- <div class="div_error">ERROR</div> -->
+                <div class="g-recaptcha">
+                    <img src="assets/imagenes/RecaptchaLogo.svg.png" alt="">
+                    <div class="g-recaptcha-text">Verificación de seguridad:</div>
+                    <input style="accent-color: green;" type="checkbox" id="verificador">
+                </div>
+
+                <div class="botonera">
+
+                </div>
+
+
+                <div class="copyright">Copyright © SYMPHONY 2023</div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_element">FACEBOOK | INSTAGRAM | TWITTER</div>
+        <div class="footer_element">Copyright © SYMPHONY 2023</div>
+        <div class="footer_element">Contacto | Aviso legal | política privacidad</div>
+    </footer>
+
+</body>
+
+</html>
